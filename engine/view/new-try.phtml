@@ -1,0 +1,20 @@
+<h1>In the game!!</h1>
+
+
+<?php if ($output['illegalLetter']): ?>
+    <h4>Check your input!!! Can be accepted only letters!</h4>
+<?php endif; ?>
+
+
+<?php if ($output['isFinish']): ?>
+    <h2>
+        <?php if ($output['isWin']): ?>
+            Win
+        <?php else: ?>
+            Fail
+        <?php endif; ?>
+    </h2>
+    <a href="/start-game">Start a new game</a>
+<?php else: ?>
+    <?php include __DIR__ . DIRECTORY_SEPARATOR . 'partial' . DIRECTORY_SEPARATOR . 'progress.phtml'; ?>
+<?php endif; ?>

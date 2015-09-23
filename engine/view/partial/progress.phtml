@@ -1,0 +1,13 @@
+<div>
+    Your word: <?= $output['word'] ?>
+</div>
+<div>
+    You have <?= $output['triesLeft'] ?> tries!
+</div>
+
+<br/>
+
+<form action="/new-try">
+    <input name="letter" />
+    <button type="submit">Try</button>
+</form>
